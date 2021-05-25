@@ -11,9 +11,12 @@ zlib.js は ZLIB(RFC1950), DEFLATE(RFC1951), GZIP(RFC1952), PKZIP の JavaScript
 
 MikiraSora folk notice
 ------
-THIS folk repo support extra feature:
-* Asynchronous deflate
-* Deflate stream-like(Non-determined length content) input.
+此folk repo支持额外的功能
+* 异步Deflate(lz77)
+* Deflate支持流式输入(即不用确定长度和内容).
+* 支持微信小程序(小游戏). ( xxx 我cnm )
+
+但因为是魔改而且本人也不怎么熟lz77，因此不保证此魔改库的功能完全正确.
 
 使い方
 ------
