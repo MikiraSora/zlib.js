@@ -9,6 +9,11 @@ zlib.js
 
 zlib.js は ZLIB(RFC1950), DEFLATE(RFC1951), GZIP(RFC1952), PKZIP の JavaScript 実装です。
 
+MikiraSora folk notice
+------
+THIS folk repo support extra feature:
+* Asynchronous deflate
+* Deflate stream-like(Non-determined length content) input.
 
 使い方
 ------
