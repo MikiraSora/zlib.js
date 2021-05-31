@@ -21,6 +21,7 @@ MikiraSora folk notice
 如果需要实现流输入，则需要给compress参数的第一个对象添加两个方法: `get(idx:number)=>number`和`getLen(reqIdx:number)=>Promise<number>`
  `get(idx:number)=>number` 获取某个下标的值
 `getLen(reqIdx:number)=>Promise<number>` 根据即将插入的值，提前计算更新长度
+**注意:使用流输入，需要自己手动计算校验码并覆写**
 
 我的实现:
 ```typescript
@@ -115,7 +116,7 @@ export class VariableSegmentArray {
 
 ```
 实际用法:
-```typesript 
+```typescript 
 let i = 0;
 let arr = new VariableSegmentArray(async () => {
                         if (i > 100) {
